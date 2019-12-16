@@ -1,5 +1,6 @@
 #This is a sample Image 
 FROM openjdk:8
+WORKDIR /home/Devopslab/
 Add targets/spring-petclinic-2.2.0.BUILD-SNAPSHOT.jar spring-petclinic-2.2.0.BUILD-SNAPSHOT.jar
 Expose 8085
 Entrypoint ["Java" "-jar" "spring-petclinic-2.2.0.BUILD-SNAPSHOT.jar"]
