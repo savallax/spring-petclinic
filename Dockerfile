@@ -5,5 +5,4 @@ MAINTAINER laxmi.savalagi@mindtree.com
 WORKDIR /home/Devopslab/spring-petclinic
 RUN echo "$PWD"
 Add spring-petclinic-2.2.0.BUILD-SNAPSHOT.jar spring-petclinic-2.2.0.BUILD-SNAPSHOT.jar
-Expose 8083
-ENTRYPOINT ["java", "-jar", "spring-petclinic-2.2.0.BUILD-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar","-Dserver.port=8085", "spring-petclinic-2.2.0.BUILD-SNAPSHOT.jar"]
