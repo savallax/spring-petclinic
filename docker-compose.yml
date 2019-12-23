@@ -1,3 +1,4 @@
+Services:
 mysql:
   image: mysql:5.7
   ports:
@@ -8,10 +9,10 @@ mysql:
   volumes:
     - "./conf.d:/etc/mysql/conf.d:ro"
 
- petclinic:
-    build:
-      context: ./
-      dockerfile: Dockerfile
-    image: petclinic
-    ports:
-      - 8085
+petclinic:
+  build:
+    context: ./
+    dockerfile: Dockerfile
+  image: petclinic
+  ports:
+    - 8085
