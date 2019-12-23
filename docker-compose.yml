@@ -13,4 +13,4 @@ petclinic:
   container_name: petclinic
   build: .
   ports:
-       - 8085:8085
+       - "8085:8085"
