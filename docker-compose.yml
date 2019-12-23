@@ -7,3 +7,11 @@ mysql:
     - MYSQL_DATABASE=petclinic
   volumes:
     - "./conf.d:/etc/mysql/conf.d:ro"
+
+ petclinic:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: petclinic
+    ports:
+      - 8085
