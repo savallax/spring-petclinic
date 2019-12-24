@@ -1,8 +1,20 @@
 version: '2'
-services:     
-    
+services:
+ mysql:
+  image: mysql:5.7
+  ports:
+    - "3306:3306"
+  environment:
+    - MYSQL_ROOT_PASSWORD=petclinic
+    - MYSQL_DATABASE=petclinic
+  volumes:
+    - "./conf.d:/etc/mysql/conf.d:ro"   
  petclinic:
-  image: laxmisavalagi/petclinic_2019:newpetclinic
   container_name: petclinic
+  build:
+      context: . 
+      dockerfile: Dockerfile  
   ports:
        - 8085:8085
+  links:
+       - mysql
