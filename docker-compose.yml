@@ -12,7 +12,7 @@ services:
  petclinic:
   container_name: petclinic
   build:
-      context: . 
+      context: /home/Devopslab/spring-petclinic
       dockerfile: Dockerfile  
   ports:
        - 8085:8085
