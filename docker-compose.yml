@@ -2,9 +2,7 @@ version: '2'
 services:     
     
  petclinic:
+  image: laxmisavalagi/petclinic_2019:newpetclinic
   container_name: petclinic
-  build:
-      context: . 
-      dockerfile: Dockerfile  
   ports:
        - 8085:8085
