@@ -9,7 +9,6 @@
     - MYSQL_DATABASE=petclinic
   volumes:
     - "./conf.d:/etc/mysql/conf.d:ro"
-
  petclinic:
   container_name: petclinic
   build:
