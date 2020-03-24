@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: petclinic-container
-          image: laxmisavalagi/petclinic_2020_24
+          image: laxmisavalagi/petclinic_2019
   replicas: 3
   selector:
     matchLabels:
