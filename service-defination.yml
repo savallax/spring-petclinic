@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: petclinic-service
   labels:
-    app: myapp
+    app: petclinic
 
 spec:
   type: NodePort
